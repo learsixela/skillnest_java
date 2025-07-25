@@ -1,5 +1,13 @@
 macos
 export JAVA_HOME=$(/usr/libexec/java_home -v 21)
-java -version
 
-ejecutar bat
+java -version
+javac --version
+
+-- Compilar archivo .java
+javac HolaMundo.java 
+javac 20250724/HolaMundo.java
+
+-- ejecutar archivo .class 
+cd 20250724
+java HolaMundo
