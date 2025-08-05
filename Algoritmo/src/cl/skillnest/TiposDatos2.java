@@ -42,6 +42,8 @@ public class TiposDatos2 {
 		//----------------- ArrayList--------------------------
 		
 		ArrayList<Integer> listaNumeros = new ArrayList<>();
+		//var listaNumeros = new ArrayList<>();
+		
 		System.out.println(listaNumeros);
 		System.out.println(listaNumeros.size());
 		
@@ -54,6 +56,40 @@ public class TiposDatos2 {
 		for (Integer elemento : listaNumeros) {
 			System.out.println("El elemento " + elemento);
 		}
+		
+		/*************** comparaciones************************/
+		
+		int numeroA = 100;
+		int numeroB = 100;
+		
+		System.out.println(numeroA == numeroB);//true; compara valores
+		
+		Integer numeroC = 200;
+		Integer numeroD = 200;
+		
+		System.out.println(numeroC == numeroD);//false; compara objeto
+		System.out.println(numeroC.equals(numeroD));//true; compara los valores
+		
+		String nombre = "Israel";
+		String name= "Israel";
+		
+		System.out.println("== ." + (nombre == name));//
+		System.out.println("equals "+ name.equals(nombre));//
+		
+		
+		/***************valores por default********************/
+		
+		int edad = 0;
+		System.out.println("la edad es: "+ edad);
+		
+		char letra = 0;// 'u0000' (el carácter nulo Unicode)
+		System.out.println("La letra es: "+ letra);
+		
+		boolean valor = false;
+		System.out.println("El de verdad es: "+ valor);
+		
+		
+		String blancoYNegro , rojo;
 	}
 
 }
