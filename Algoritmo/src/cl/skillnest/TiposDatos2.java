@@ -90,6 +90,8 @@ public class TiposDatos2 {
 		
 		
 		String blancoYNegro , rojo;
+		
+		
 	}
 
 }
