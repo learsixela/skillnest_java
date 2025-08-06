@@ -89,7 +89,7 @@ public class TiposDatos2 {
 		System.out.println("El de verdad es: "+ valor);
 		
 		
-		String blancoYNegro , rojo;
+		//String blancoYNegro , rojo;
 		
 		
 	}
