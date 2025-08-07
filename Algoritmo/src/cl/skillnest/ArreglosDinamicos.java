@@ -1,6 +1,7 @@
 package cl.skillnest;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class ArreglosDinamicos {
 
@@ -64,13 +65,40 @@ public class ArreglosDinamicos {
 	       System.out.println(numeros);//[10,60,30]
 	       System.out.println(numeros.reversed());//[30,60,10]
 	       
-	       //TODO recorrer ArrayList
-	       
 	       
 	       //clear;Elimina todos los elementos
-	       numeros.clear();
-	       System.out.println("Esta vacio? "+numeros.isEmpty());//true, ArrayList vacio
+	      // numeros.clear();
+	      // System.out.println("Esta vacio? "+numeros.isEmpty());//true, ArrayList vacio
 	       
+	       //TODO recorrer ArrayList
+	       
+	       System.out.println("Usando for clásico:");
+	       for (int i = 0; i < numeros.size(); i++) {
+	           System.out.println("Índice " + i + ": " + numeros.get(i));
+	       }
+
+	       System.out.println("Usando for-each:");
+	       for (Integer num : numeros) {
+	           System.out.println("Valor: " + num);
+	       }
+
+	       System.out.println("Usando forEach con lambda:");
+	       numeros.forEach(n -> System.out.println("Número: " + n));
+	       
+	       System.out.println("Usando listIterator:");
+	       ListIterator<Integer> it = numeros.listIterator();
+	       while (it.hasNext()) {
+	           System.out.println(it.next());
+	       }
+	       
+	       System.out.println("Usando while clásico:");
+	       int i =0; 
+	       while(i<numeros.size()){
+	    	   System.out.println(numeros.get(i)); 
+	    	   i++;
+	       }
+
+
 
 	}
 
