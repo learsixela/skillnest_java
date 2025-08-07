@@ -25,7 +25,7 @@ public class BucleFor {
 		//lista inmutable
 		List<String> colores = List.of("rojo", "blanco","azul");
 		//colores.add("verde");//java.lang.UnsupportedOperationException
-		//System.out.println(colores);
+		System.out.println(colores);
 		
 		//mutable
 		ArrayList<String> listaColores = new ArrayList<>(List.of("rojo", "blanco","azul"));
