@@ -41,28 +41,11 @@ public class Persona {
 		System.out.println("Hola, soy "+ nombre +" yo camino 5 km diarios");
 	}
 
+	public void enseniar(Alumno alu) {
+		System.out.println(alu.nombre);
+	}
+	
 
 }
 
-/*
-public class Perro{
-	String color;
-	double peso;
-	String raza;
-	int edad;
-	String genero;
-	String sonido;
-	String especie;
-	
-}
-public class Gato{
-	String color;
-	double peso;
-	String raza;
-	int edad;
-	String genero;
-	String sonido;
-	String especie;
-	
-}*/
 

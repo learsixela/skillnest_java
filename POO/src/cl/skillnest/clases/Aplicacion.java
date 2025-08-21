@@ -7,6 +7,8 @@ public class Aplicacion {
 		Alumno alumno = new Alumno();
 		System.out.println(alumno.nombre);
 		System.out.println();
+		alumno.saludar();
+	
 
 	}
 

@@ -26,8 +26,8 @@ public class Alumno {
 		this.edad = edad;
 	}
 	// Alumno alumno4 = new Alumno("Juan",30);
-	public Alumno(String nombre, int edad) {
-		this.nombre = nombre;
+	public Alumno(String nom, int edad) {
+		nombre = nom;
 		this.edad = edad;
 	}
 	// Alumno alumno5 = new Alumno(35,"Pedro");
@@ -52,6 +52,18 @@ public class Alumno {
 				", curso=" + curso + 
 				", numeroLista=" + numeroLista +
 				", email=" + email + "]";
+	}
+	
+	private void estudiar() {
+		System.out.println("Me encanta estudiar");
+	}
+	
+	public void saludar() {
+		System.out.println("Hola, me encuentro presente");
+		this.estudiar();
+		Persona persona = new Persona();
+		persona.enseniar(this);
+		
 	}
 	
 	
