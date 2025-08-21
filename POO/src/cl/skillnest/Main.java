@@ -51,6 +51,8 @@ public class Main {
 			System.out.println(alumno);
 		}
 		
+		//String nombre2 = alumno1.nombre;
+		//System.out.println(alumno1.nombre);
 		sc.close();
 	}
 

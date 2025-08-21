@@ -2,8 +2,8 @@ package cl.skillnest.clases;
 
 public class Alumno {
 	//atributos
-	String nombre;
-	int edad;
+	public String nombre;
+	private int edad;
 	String curso;//atributo objeto
 	int numeroLista;
 	String email;
@@ -48,7 +48,7 @@ public class Alumno {
 	@Override
 	public String toString() {
 		return "Alumno [nombre=" + nombre + 
-				", edad=" + edad + 
+				", edad=" + this.edad + 
 				", curso=" + curso + 
 				", numeroLista=" + numeroLista +
 				", email=" + email + "]";
