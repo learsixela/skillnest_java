@@ -53,6 +53,8 @@ public class Main {
 		
 		//String nombre2 = alumno1.nombre;
 		//System.out.println(alumno1.nombre);
+		
+		persona2.enseniar(alumno1);
 		sc.close();
 	}
 
