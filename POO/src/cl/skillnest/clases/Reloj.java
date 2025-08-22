@@ -22,7 +22,7 @@ public class Reloj {
 	       this.horaAlarma = horaAlarma;
 	       this.minutoAlarma = minutoAlarma;
 	       this.alarmaActiva = true;
-	       System.out.println("Alarma establecida para las " + this.horaAlarma + ":" + this.alarmaActiva);
+	       System.out.println("Alarma establecida para las " + this.horaAlarma + ":" + this.minutoAlarma);
 	   }
 
 	   // Método de instancia para desactivar la alarma
@@ -62,4 +62,58 @@ public class Reloj {
 	           this.alarmaActiva = false;
 	       }
 	   }
+	   
+	   //getters & setters
+	   public int getHora() {
+		   return hora;
+	   }
+
+	   public void setHora(int hora) {
+		   if(hora >= 0) {
+			   this.hora = hora;
+		   }else {
+			   System.out.println("No se puede asignar una hora negativa");
+		   }
+	   }
+
+	   public int getMinuto() {
+		   return minuto;
+	   }
+
+	   public void setMinuto(int minuto) {
+		   this.minuto = minuto;
+	   }
+
+	   public int getSegundo() {
+		   return segundo;
+	   }
+
+	   public void setSegundo(int segundo) {
+		   this.segundo = segundo;
+	   }
+
+	   public boolean isAlarmaActiva() {
+		   return alarmaActiva;
+	   }
+
+	   public void setAlarmaActiva(boolean alarmaActiva) {
+		   this.alarmaActiva = alarmaActiva;
+	   }
+
+	   public int getHoraAlarma() {
+		   return horaAlarma;
+	   }
+
+	   public void setHoraAlarma(int horaAlarma) {
+		   this.horaAlarma = horaAlarma;
+	   }
+
+	   public int getMinutoAlarma() {
+		   return minutoAlarma;
+	   }
+
+	   public void setMinutoAlarma(int minutoAlarma) {
+		   this.minutoAlarma = minutoAlarma;
+	   }
+	   
 	}

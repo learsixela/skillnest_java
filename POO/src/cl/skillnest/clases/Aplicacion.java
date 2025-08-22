@@ -11,15 +11,25 @@ public class Aplicacion {
 		System.out.println();
 		alumno.saludar();
 		
-		Reloj reloj = new Reloj(20,42,0);
-		reloj.tickSegundo();
-		reloj.mostrarHora();
 
 		//crear el reloj
+		Reloj reloj = new Reloj(20,39,59);
 		//establecer alarma
+		reloj.establecerAlarma(20, 40);
 		//ciclo(while) llamar tickSegundo
+
+		reloj.tickSegundo();
 		//mostrar hora
+		reloj.mostrarHora();
 		
+		//saber solo la hora
+		System.out.println("la hora es: "+reloj.getHora());
+		
+		reloj.setHora(19);
+		reloj.mostrarHora();
+		
+		reloj.setHora(-1);
+		reloj.mostrarHora();
 	}
 
 }
