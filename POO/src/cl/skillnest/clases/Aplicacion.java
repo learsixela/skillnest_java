@@ -12,7 +12,7 @@ public class Aplicacion {
 		alumno.saludar();
 		
 
-		//crear el reloj
+		//crear el objeto reloj
 		Reloj reloj = new Reloj(20,39,59);
 		//establecer alarma
 		reloj.establecerAlarma(20, 40);

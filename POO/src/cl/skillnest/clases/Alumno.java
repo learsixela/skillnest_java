@@ -4,7 +4,7 @@ public class Alumno {
 	//atributos
 	public String nombre;
 	private int edad;
-	String curso;//atributo objeto
+	Curso curso;//asociación
 	int numeroLista;
 	String email;
 	
@@ -36,7 +36,7 @@ public class Alumno {
 		this.edad = edad;
 	}
 	// Alumno alumno6 = new Alumno("Lucas", 25,"Java 0078",8,"lucas@lucas.cl);
-	public Alumno(String nombre, int edad, String curso, int numeroLista, String email) {
+	public Alumno(String nombre, int edad, Curso curso, int numeroLista, String email) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.curso = curso;
@@ -44,6 +44,7 @@ public class Alumno {
 		this.email = email;
 	}
 	
+
 	//metodos
 	@Override
 	public String toString() {
@@ -66,6 +67,36 @@ public class Alumno {
 		
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public int getNumeroLista() {
+		return numeroLista;
+	}
+	public void setNumeroLista(int numeroLista) {
+		this.numeroLista = numeroLista;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public Curso getCurso() {
+		return curso;
+	}
+	public void setCurso(Curso curso) {
+		this.curso = curso;
+	}
 	
 	
 }
