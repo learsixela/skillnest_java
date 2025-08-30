@@ -1,19 +1,17 @@
 package cl.skillnest.interfaz.clases;
 
-public class Coche implements Vehiculo{
+public class Moto implements Vehiculo{
 	//atributos
 	private int velocidad;
 	
-	//constructor
-	public Coche() {
+	public Moto() {
 		super();
-		
 	}
 	
-	//metodos
+
 	@Override
 	public void acelerar() {
-		this.velocidad = 10;
+		this.velocidad = 15;
 		
 	}
 
@@ -26,21 +24,15 @@ public class Coche implements Vehiculo{
 	public int obtenerVelocidad() {
 		return velocidad;
 	}
-	
-	//getters & setters
+
 
 	public int getVelocidad() {
 		return velocidad;
 	}
 
+
 	public void setVelocidad(int velocidad) {
 		this.velocidad = velocidad;
 	}
-
-	@Override
-	public String toString() {
-		return "Coche [velocidad=" + velocidad + "]";
-	}
-	
 
 }
