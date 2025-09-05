@@ -23,8 +23,13 @@ class CalculadoraTest {
 
 	@Test
 	void testDivision() {
-		int division = calculadora.dividir(5,0);
+		int division = calculadora.dividir(5,2);
 		assertNotEquals(2, division);
-		//assertThrows(IllegalArgumentException.class,()-> division);
+
+	}
+	
+	@Test
+	void testDivisionException() {
+		assertThrows(IllegalArgumentException.class,()-> calculadora.dividir(5,0));
 	}
 }
